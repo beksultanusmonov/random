@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random user</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <p class="logo">Random User</p>
+            <p class="add" id="add">+</p>
+        </div>
+    </header>
+
+    <section class="create hidden" id="overlay">
+        <form class="form" id="form">
+            <h1 class="title">Ism kiritish!</h1>
+            <label for="name">Ism kiriting:</label>
+            <input type="text" id="name" required>
+            <span id="error"></span>
+            <button>Saqlash</button>
+            <p>bekor qilish uchun orqa fonni ikki martta bosing!</p>
+        </form>
+    </section>
+
+    <main class="main">
+        <div class="choosen">
+            <button id="start">Boshlash</button>
+            <p id="count">0</p>
+        </div>
+        <div class="users" id="users"></div>
+    </main>
+
+    <section class="selected hidden">
+        <div class="select">
+            <p>Tabriklaymiz!</p>
+            <h1 id="selected-user"></h1>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
