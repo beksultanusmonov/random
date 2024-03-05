@@ -93,14 +93,11 @@ function deleteItem(id) {
 
 error.style.display = 'none'
 
-function randomUser() {
-    console.log(users.length)
-}
 
-randomUser()
+
 
 startBtn.addEventListener('click', () => {
-    let counts = 3;
+    let counts = 7;
     let selectInterval = setInterval(() => {
         count.textContent = counts;
         counts--
@@ -111,6 +108,6 @@ startBtn.addEventListener('click', () => {
         const randomUser = Math.floor(Math.random() * users.length)
         selected.classList.remove('hidden')
         selectedUser.textContent = users[randomUser].title
-        counts = 3;
+        counts = 7;
     }, (counts + 1) * 1000)
 })
